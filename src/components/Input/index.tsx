@@ -12,7 +12,8 @@ import { IconType } from 'react-icons/lib/cjs';
 
 interface InputProps {
   name: string;
-  icon: IconType;
+  icon?: IconType;
+  placeholder: string;
 }
 
 const Input = ({ name, icon: Icon, ...rest }:InputProps) => {
